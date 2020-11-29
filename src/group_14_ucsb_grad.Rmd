@@ -20,3 +20,12 @@ ucsb_grad<- read.csv(here("data", "ucsb_grad_data.csv"))
 
 ```
 
+```{r}
+#Create a basic ggplot column graph with fill color based on race/ethnicity:
+ggplot(data = ucsb_grad, 
+       aes(x = year, 
+           y = domestic_enrollment)) + 
+         geom_col(aes(fill = ethnicity))
+
+```
+
