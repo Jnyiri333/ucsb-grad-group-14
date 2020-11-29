@@ -1,0 +1,22 @@
+---
+title: "Group 14 UCSB domestic grad enrollment"
+author: "Jake Nyiri, Kat Cotti"
+date: "11/29/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#initialize packages
+library(tidyverse)
+library(here)
+```
+```{r}
+#read in raw data
+ucsb_grad<- read.csv(here("data", "ucsb_grad_data.csv"))
+
+```
+
